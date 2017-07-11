@@ -2,16 +2,44 @@
 @import './components/cta-block';
 @import './components/cta-links-block';
 
+@font-face {
+	font-family: "Avenir-Medium";
+	src: url("../fonts/AvenirLTStd-Medium.otf") format("otf");
+}
+
+@font-face {
+	font-family: "Avenir-Black";
+	src: url("../fonts/AvenirLTStd-Black.otf") format("otf");
+}
+
+@font-face {
+	font-family: "Avenir-Light";
+	src: url("../fonts/AvenirLTStd-Light.otf") format("otf");
+}
+
+@font-face {
+	font-family: "Avenir-Book";
+	src: url("../fonts/AvenirLTStd-Book.otf") format("otf");
+}
+
+@font-face {
+	font-family: "Avenir-Oblique";
+	src: url("../fonts/AvenirLTStd-Oblique.otf") format("otf");
+}
+
 body {
   margin: 0;
 }
 
 body, * {
   box-sizing: border-box;
+  font-family: "Avenir-Medium";
 }
 
 .er-body {
   padding: 40px 82px 40px 40px;
+  max-width: 1220px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -22,4 +50,31 @@ picture {
   img {
     width: 100%;
   }
+}
+
+@media screen and (min-width: 1024px) {
+	.er-body {
+		padding: 80px 82px 88px 40px;
+		p {
+			max-width: 709px;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+	.er-header, .er-main * {
+		display: none;
+	}
+
+	.er-main {
+		&:before {
+			content: "" attr(data-orientation-label) "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate3d(-50%, -50%, 0);
+		}
+	}
 }

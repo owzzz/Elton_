@@ -60,6 +60,7 @@ gulp.task('images', () =>
 gulp.task('copy', () =>
   gulp.src([
     'app/*',
+    'app/fonts/*',
     '!app/*.html',
     'node_modules/apache-server-configs/dist/.htaccess'
   ], {
@@ -193,11 +194,16 @@ gulp.task('serve:dist', ['default'], () =>
   })
 );
 
+gulp.task('fonts', () => {
+    return gulp.src('app/fonts/**/*')
+        .pipe(gulp.dest('dist/fonts'));
+});
+
 // Build production files, the default task
 gulp.task('default', ['clean'], cb =>
   runSequence(
     'styles',
-    ['lint', 'html', 'scripts', 'images', 'copy'],
+    ['lint', 'html', 'scripts', 'images', 'copy', 'fonts'],
     'generate-service-worker',
     cb
   )
