@@ -1,0 +1,22 @@
+.er-cta--links {
+	display: flex;
+	background: black;
+	height: 215px;
+
+	a {
+		color: white;
+		flex-grow: 1;
+
+		text-align: center;
+		text-transform: uppercase;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+
+		&:first-item {
+			border-right: 1px solid white;
+		}
+	}
+}

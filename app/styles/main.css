@@ -1,0 +1,25 @@
+@import './components/header';
+@import './components/cta-block';
+@import './components/cta-links-block';
+
+body {
+  margin: 0;
+}
+
+body, * {
+  box-sizing: border-box;
+}
+
+.er-body {
+  padding: 40px 82px 40px 40px;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+picture {
+  img {
+    width: 100%;
+  }
+}
