@@ -1,4 +1,5 @@
 @import './components/header';
+@import './components/menu';
 @import './components/cta-block';
 @import './components/cta-links-block';
 
@@ -43,7 +44,21 @@ body, * {
 }
 
 h1 {
-  font-size: 16px;
+	font-family: "Avenir-Book";
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
+h2 {
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-family: "Avenir-Oblique";
+}
+
+p {
+	font-family: "Avenir-Light";
+	font-size: 12px;
+	line-height: 24px;
 }
 
 picture {

@@ -1,0 +1,49 @@
+.er-menu {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .er-close {
+    	position: absolute;
+    	top: 57px;
+    }
+
+    .er-menu-inner {
+    	width: 80vw;
+
+    	ul {
+    		list-style-type: none;
+    		padding: 0;
+
+    		li {
+    			margin-bottom: 20px;
+
+    			a {
+    				text-decoration: none;
+    				text-transform: uppercase;
+    				color: black;
+    				font-family: "Avenir-medium";
+    			}
+
+    			ul {
+    				margin-top: 10px;
+    				li {
+    					margin-bottom: 5px;
+
+    					a {
+    						text-transform: lowercase;
+    						font-family: "Avenir-Light";
+    					}
+    				}
+    			}
+    		}
+    	}
+    }
+}
