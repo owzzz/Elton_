@@ -10,40 +10,65 @@
     align-items: center;
     justify-content: center;
 
+    transform: translateX(-100vw);
+    transition: transform 500ms cubic-bezier(0, 1.16, 0.45, 0.98) 200ms;
+
     .er-close {
     	position: absolute;
     	top: 57px;
+    	font-family: "Avenir-Light";
     }
 
     .er-menu-inner {
     	width: 80vw;
+
+    	transform: translateX(-40px);
+    	opacity: 0;
+    	transition: all 500ms cubic-bezier(0, 1.16, 0.45, 0.98);
 
     	ul {
     		list-style-type: none;
     		padding: 0;
 
     		li {
-    			margin-bottom: 20px;
+    			margin-bottom: 40px;
 
     			a {
     				text-decoration: none;
     				text-transform: uppercase;
+    				letter-spacing: 1px;
     				color: black;
-    				font-family: "Avenir-medium";
+    				font-family: "Avenir-light";
+    				font-size: 16px;
+    				margin-bottom: 20px;
+    				display: block;
     			}
 
     			ul {
     				margin-top: 10px;
     				li {
-    					margin-bottom: 5px;
+    					margin-bottom: 15px;
 
     					a {
     						text-transform: lowercase;
-    						font-family: "Avenir-Light";
+    						font-size: 12px;
+    						letter-spacing: 1px;
+    						margin-bottom: 0;
     					}
     				}
     			}
     		}
+    	}
+    }
+
+    &.er-menu--visible {
+    	transform: translateX(0vw);
+    	transition: all 500ms cubic-bezier(0, 1.16, 0.45, 0.98);
+
+    	.er-menu-inner {
+    		opacity: 1;
+    		transform: translateX(0px);
+    		transition: all 400ms cubic-bezier(0, 1.16, 0.45, 0.98) 250ms;
     	}
     }
 }
