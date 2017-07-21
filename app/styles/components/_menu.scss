@@ -17,6 +17,10 @@
     	position: absolute;
     	top: 57px;
     	font-family: "Avenir-Light";
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     .er-menu-inner {

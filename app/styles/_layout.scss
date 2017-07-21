@@ -1,0 +1,50 @@
+.er-body {
+  padding: 40px 82px 40px 40px;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.page-ready {
+	animation: fade-in 1s cubic-bezier(0, 0.98, 0.58, 1) forwards 0;
+}
+
+.er-work {
+	margin-top: 60px;
+}
+
+@media screen and (min-width: 1024px) {
+	.er-body {
+		padding: 80px 82px 88px 40px;
+		p {
+			max-width: 709px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 1023px) and (orientation: landscape) {
+	.er-header, .er-main * {
+		display: none;
+	}
+
+	.er-main {
+		&:before {
+			content: "" attr(data-orientation-label) "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate3d(-50%, -50%, 0);
+		}
+	}
+}

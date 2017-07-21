@@ -72,22 +72,18 @@
     });
   }
 
+  document.ready
+
   // Your custom JavaScript goes here
-  document.addEventListener('DOMContentLoaded', function() {
-    console.log('Com Loaded');
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOMContentLoaded');
+    let header = new Header();
+    let modal = new Modal();
+    let body = document.querySelector('body');
 
-    var header = document.getElementsByClassName('er-header');
-
-    console.log(header);
-
-    header.addEventListener('click', function() {
-      console.log('click', this);
-    });
-
-    var closeBtn = document.getElementsByClassName('er-close');
-
-    closeBtn.addEventListener('click', function() {
-      console.log('click', this);
+    imagesLoaded(body, ( instance ) => {
+      console.log('all images are loaded');
+      body.classList.add('page-ready');
     });
   });
 })();

@@ -1,0 +1,49 @@
+.er-body {
+	h1 {
+		font-family: "Avenir-Book";
+		font-size: 16px;
+		letter-spacing: 2px;
+		margin-bottom: 25px;
+	}
+
+	h2 {
+		font-size: 12px;
+		letter-spacing: 1px;
+		font-family: "Avenir-Oblique";
+		margin-bottom: 42px;
+	}
+
+	h3 {
+		font-size: 14px;
+		letter-spacing: 1px;
+		font-family: "Avenir-Oblique";
+		margin-bottom: 30px;
+	}
+
+
+	p {
+		font-family: "Avenir-Light";
+		font-size: 12px;
+		line-height: 24px;
+	}
+}
+
+
+
+.er-list {
+	list-style-type: none;
+	margin: 0 0 30px 0;
+	padding: 0;
+
+	li {
+		font-family: Avenir-Light;
+    	font-size: 12px;
+    	line-height: 24px;
+
+		a {
+
+    		text-decoration: none;
+    		color: #000;
+		}
+	}
+}
