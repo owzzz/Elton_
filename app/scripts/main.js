@@ -72,8 +72,6 @@
     });
   }
 
-  document.ready
-
   // Your custom JavaScript goes here
   document.addEventListener('DOMContentLoaded', () => {
     console.log('DOMContentLoaded');
