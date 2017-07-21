@@ -14,9 +14,31 @@
     <link rel="manifest" href="manifest.json">
 
     <!-- Your styles -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
   </head>
   <body>
+    <section class="er-menu">
+      <span class="er-close">x</span>
+      <div class="er-menu-inner">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+            <ul>
+              <li><a href="/portfolio/snowfox.html">the snow fox</a></li>
+              <li><a href="/portfolio/yeshi.html">walk with yeshi</a></li>
+              <li><a href="/portfolio/nike-plus.html">nike+</a></li>
+              <li><a href="/portfolio/converse.html">converse.com</a></li>
+              <li><a href="/portfolio/nike-sb.html">sb garage</a></li>
+              <li><a href="/portfolio/snowfox.html">kd9</a></li>
+              <li><a href="/portfolio/chromebook.html">chromebook_type</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </section>
     <header class="er-header">
       <h2>Elton Rhee</h2>
     </header>
@@ -24,8 +46,8 @@
       <!-- Main Tout -->
       <section class="er-main-tout">
         <picture>
-          <source media="(min-width: 1024px)" srcset="images/converse/Desktop/00-hero.jpg">
-          <img src="images/converse/Mobile/00-hero.jpg" alt="Man jumping with emphasise one Converse trainer" />
+          <source media="(min-width: 1024px)" srcset="../images/converse/Desktop/00-hero.jpg">
+          <img src="../images/converse/Mobile/00-hero.jpg" alt="Man jumping with emphasise one Converse trainer" />
         </picture>
       </section>
 
@@ -38,28 +60,28 @@
 
       <section class="er-gallery">
         <picture>
-          <source media="(min-width: 1024px)" srcset="images/converse/Desktop/01-tablet.jpg">
-          <img src="images/converse/Mobile/01-tablet.jpg" alt="Man jumping with emphasise one Converse trainer" />
+          <source media="(min-width: 1024px)" srcset="../images/converse/Desktop/01-tablet.jpg">
+          <img src="../images/converse/Mobile/01-tablet.jpg" alt="Man jumping with emphasise one Converse trainer" />
         </picture>
 
         <picture>
-          <source media="(min-width: 1024px)" srcset="images/converse/Desktop/02-marble.jpg">
-          <img src="images/converse/Mobile/02-marble.jpg" alt="Man jumping with emphasise one Converse trainer" />
+          <source media="(min-width: 1024px)" srcset="../images/converse/Desktop/02-marble.jpg">
+          <img src="../images/converse/Mobile/02-marble.jpg" alt="Man jumping with emphasise one Converse trainer" />
         </picture>
 
         <picture>
-          <source media="(min-width: 1024px)" srcset="images/converse/Desktop/03-customize.jpg">
-          <img src="images/converse/Mobile/03-customize.jpg" alt="Man jumping with emphasise one Converse trainer" />
+          <source media="(min-width: 1024px)" srcset="../images/converse/Desktop/03-customize.jpg">
+          <img src="../images/converse/Mobile/03-customize.jpg" alt="Man jumping with emphasise one Converse trainer" />
         </picture>
 
         <picture>
-          <source media="(min-width: 1024px)" srcset="images/converse/Desktop/04-Phone.jpg">
-          <img src="images/converse/Mobile/04-Phone.jpg" alt="Man jumping with emphasise one Converse trainer" />
+          <source media="(min-width: 1024px)" srcset="../images/converse/Desktop/04-Phone.jpg">
+          <img src="../images/converse/Mobile/04-Phone.jpg" alt="Man jumping with emphasise one Converse trainer" />
         </picture>
 
         <picture>
-          <source media="(min-width: 1024px)" srcset="images/converse/Desktop/05-colours-tile.jpg">
-          <img src="images/converse/Mobile/05-colours-tile.jpg" alt="Man jumping with emphasise one Converse trainer" />
+          <source media="(min-width: 1024px)" srcset="../images/converse/Desktop/05-colours-tile.jpg">
+          <img src="../images/converse/Mobile/05-colours-tile.jpg" alt="Man jumping with emphasise one Converse trainer" />
         </picture>
       </section>
 
@@ -76,7 +98,10 @@
     <footer class="er-footer"></footer>
     
     <!-- build:js scripts/main.min.js -->
-    <script src="scripts/main.js"></script>
+    <script src="../scripts/libs/images-loaded.min.js"></script>
+    <script src="../scripts/modules/header.js"></script>
+    <script src="../scripts/modules/modal.js"></script>
+    <script src="../scripts/main.js"></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
