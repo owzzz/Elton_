@@ -10,11 +10,15 @@
 		width: 100vw;
 	}
 
-	.er-portolio-item {
+	.er-portfolio-item {
 		color: #fff;
 		transition: color 400ms ease-in-out;
-        font-family: "Avenir-Light";
+        font-family: "Avenir-light";
         cursor: pointer;
+
+        span {
+        	font-family: "Avenir-light";
+        }
 	}
 
 	.portfolio-target {
@@ -44,7 +48,7 @@
 		}
 	}
 
-	.er-portolio-item {
+	.er-portfolio-item {
 		color: #FFF;
 		transition: color 400ms ease-in-out;
 	}
@@ -57,20 +61,21 @@
 
 @media screen and (min-width: 1024px) {
 	.er-home {
-
 		.er-header {
 			display: flex;
 		    align-items: flex-start;
 		    justify-content: flex-end;
 		    padding: 120px 210px 0 0;
-
-			h2 {
-				float: right;
-			}
+		    background: none;
 		}
 
-		.er-portolio-item {
+		.er-portfolio-item {
 			color: #000;
+			transition: color 400ms ease-in-out;
+
+			&:hover {
+				font-family: "Avenir-Medium";
+			}
 		}
 
 		.er-main {
@@ -79,6 +84,14 @@
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
+		}
+
+		&.image-loaded {
+			.er-portfolio-item {
+				color: #fff;
+				transition: color 500ms ease-in-out;
+
+			}
 		}
 	}
 }

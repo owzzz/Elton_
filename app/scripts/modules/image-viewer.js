@@ -1,6 +1,6 @@
 class ImageViewer {
 	constructor() {
-		let portfolioItems = document.getElementsByClassName('er-portolio-item');
+		let portfolioItems = document.getElementsByClassName('er-portfolio-item');
 		let target = document.getElementsByClassName('portfolio-target')[0];
 		let body = document.getElementsByTagName('body')[0];
 
