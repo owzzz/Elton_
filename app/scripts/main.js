@@ -74,13 +74,18 @@
 
   // Your custom JavaScript goes here
   document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOMContentLoaded');
     let header = new Header();
-    let modal = new Modal();
     let body = document.querySelector('body');
 
+    if(document.querySelector('.er-menu')) {
+      let modal = new Modal();
+    }
+
+    if(document.querySelector('.er-portfolio-list')) {
+      let imageViewer = new ImageViewer();
+    }
+
     imagesLoaded(body, ( instance ) => {
-      console.log('all images are loaded');
       body.classList.add('page-ready');
     });
   });

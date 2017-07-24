@@ -13,6 +13,7 @@
 	margin-top: 60px;
 }
 
+
 @media screen and (min-width: 1024px) {
 	.er-body {
 		padding: 80px 82px 88px 40px;
@@ -33,10 +34,17 @@
 	.er-main {
 		&:before {
 			content: "" attr(data-orientation-label) "";
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate3d(-50%, -50%, 0);
+		    position: absolute;
+		    top: 0%;
+		    left: 0%;
+		    z-index: 99999999999;
+		    background: white;
+		    width: 100vw;
+		    height: 100vh;
+		    text-align: center;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
 		}
 	}
 }

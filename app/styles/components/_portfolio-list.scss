@@ -1,0 +1,73 @@
+.er-portfolio-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100vw;
+    margin-top: 70px;
+
+    li {
+        min-height: 70vh;
+        width: 100vw;
+
+        min-height: 70vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 50px;
+            width: 100vw;
+            height: 70vh;
+            background-size: cover;
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+            font-family: "Avenir-light";
+            letter-spacing: 1px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .er-portfolio-list {
+        left: 212px;
+        width: initial;
+        margin: 0;
+        position: relative;
+        animation: fade-in-up 1s ease-in-out forwards 0;
+
+        li {
+            margin-bottom: 40px;
+            min-height: initial;
+            height: initial;
+            display: block;
+            width: initial;
+
+            a {
+                display: initial;
+                align-items: initial;
+                justify-content: initial;
+                height: initial;
+                width: initial;
+                background: none;
+                padding: 0;
+
+                text-decoration: none;
+                text-transform: lowercase;
+                letter-spacing: 1px;
+                color: black;
+                font-family: "Avenir-light";
+                font-size: 14px;
+                margin-bottom: 20px;
+                display: block;
+
+                &:hover {
+                    font-family: "Avenir-Book";
+                }
+            }
+        }
+    }
+}

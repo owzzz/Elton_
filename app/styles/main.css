@@ -1,12 +1,19 @@
 @import './variables';
 @import './fonts';
 @import './typography';
+@import './animations';
 @import './layout';
 
+
+// Layouts
+@import './layouts/home';
+
+// Components
 @import './components/header';
 @import './components/menu';
 @import './components/cta-block';
 @import './components/cta-links-block';
+@import './components/portfolio-list';
 
 
 body, * {

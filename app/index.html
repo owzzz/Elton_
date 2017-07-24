@@ -16,83 +16,22 @@
     <!-- Your styles -->
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body>
-    <section class="er-menu">
-      <span class="er-close">x</span>
-      <div class="er-menu-inner">
-        <ul>
-          <li>
-            <a href="/">Home</a>
-            <ul>
-              <li><a href="/portfolio/snowfox.html">the snow fox</a></li>
-              <li><a href="/portfolio/yeshi.html">walk with yeshi</a></li>
-              <li><a href="/portfolio/nike-plus.html">nike+</a></li>
-              <li><a href="/portfolio/converse.html">converse.com</a></li>
-              <li><a href="/portfolio/nike-sb.html">sb garage</a></li>
-              <li><a href="/portfolio/snowfox.html">kd9</a></li>
-              <li><a href="/portfolio/chromebook.html">chromebook_type</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="/about.html">About</a>
-          </li>
-        </ul>
-      </div>
-    </section>
+  <body class="er-home">
     <header class="er-header">
       <h2>Elton Rhee</h2>
     </header>
     <section class="er-main" data-orientation-label="best viewed in portrait">
-      <!-- Main Tout -->
-      <section class="er-main-tout">
-        <picture>
-          <source media="(min-width: 1024px)" srcset="images/converse/Desktop/00-hero.jpg">
-          <img src="images/converse/Mobile/00-hero.jpg" alt="Man jumping with emphasise one Converse trainer" />
-        </picture>
-      </section>
-
-      <section class="er-body">
-        <h1>converse.com</h1>
-        <h2>converse</h2>
-        <p>On July of 2016, Converse made their move over to Nike.com over a decade after being bought out by Nike.</p>
-        <p>Leveraging AKQA’s expertise in the Nike.com platform, we were tasked with migrating Converse over while maintaining its distinct and newly positioned brand identity.</p>
-      </section>
-
-      <section class="er-gallery">
-        <picture>
-          <source media="(min-width: 1024px)" data-srcset="images/converse/Desktop/01-tablet.jpg">
-          <img data-src="images/converse/Mobile/01-tablet.jpg" alt="Man jumping with emphasise one Converse trainer" />
-        </picture>
-
-        <picture>
-          <source media="(min-width: 1024px)" data-srcset="images/converse/Desktop/02-marble.jpg">
-          <img data-src="images/converse/Mobile/02-marble.jpg" alt="Man jumping with emphasise one Converse trainer" />
-        </picture>
-
-        <picture>
-          <source media="(min-width: 1024px)" data-srcset="images/converse/Desktop/03-customize.jpg">
-          <img data-src="images/converse/Mobile/03-customize.jpg" alt="Man jumping with emphasise one Converse trainer" />
-        </picture>
-
-        <picture>
-          <source media="(min-width: 1024px)" data-srcset="images/converse/Desktop/04-Phone.jpg">
-          <img data-src="images/converse/Mobile/04-Phone.jpg" alt="Man jumping with emphasise one Converse trainer" />
-        </picture>
-
-        <picture>
-          <source media="(min-width: 1024px)" data-srcset="images/converse/Desktop/05-colours-tile.jpg">
-          <img data-src="images/converse/Mobile/05-colours-tile.jpg" alt="Man jumping with emphasise one Converse trainer" />
-        </picture>
-      </section>
-
-      <section class="er-cta">
-        <a href="/">Visit Website</a>
-      </section>
-
-      <section class="er-cta--links">
-        <a href="/">Previous<br/>Project</a>
-        <a href="/">Next<br/>Project</a>
-      </section>
+      <img class="portfolio-target" src="" data-src="" alt="" />
+      <ul class="er-portfolio-list">
+        <li><a class="er-portolio-item" href="/portfolio/snowfox.html" data-image="/images/snowfox/Desktop/00-Hero.jpg" data-mobile-image="/images/snowfox/Mobile/00-hero.jpg"><span>the snow fox</span></a></li>
+        <li><a class="er-portolio-item" href="/portfolio/yeshi.html" data-image="/images/yeshi/Desktop/00-Hero.jpg" data-mobile-image="/images/yeshi/Mobile/00-hero.jpg"><span>walk with yeshi</span></a></li>
+        <li><a class="er-portolio-item" href="/portfolio/nike-plus.html" data-image="/images/nike-plus/Desktop/00-Hero.jpg" data-mobile-image="/images/nike-plus/Mobile/00-hero.jpg"><span>nike+</span></a></li>
+        <li><a class="er-portolio-item" href="/portfolio/converse.html" data-image="/images/converse/Desktop/00-hero.jpg" data-mobile-image="/images/converse/Mobile/00-hero.jpg"><span>converse.com</span></a></li>
+        <li><a class="er-portolio-item" href="/portfolio/nike-sb.html" data-image="/images/nike-sb-garage/Desktop/00-hero.jpg" data-mobile-image="/images/nike-sb-garage/Mobile/00-hero.jpg"><span>sb garage</span></a></li>
+        <li><a class="er-portolio-item" href="/portfolio/snowfox.html" data-image="/images/snowfox/Desktop/00-Hero.jpg" data-mobile-image="/images/snowfox/Mobile/00-hero.jpg"><span>kd9</span></a></li>
+        <li><a class="er-portolio-item" href="/portfolio/chromebook.html" data-image="/images/chromebook/Desktop/00-hero.jpg" data-mobile-image="/images/chromebook/Mobile/00-hero.jpg"><span>chromebook_type</span></a></li>
+      </ul>
+    </section>
 
     </section>
     <footer class="er-footer"></footer>
@@ -100,7 +39,7 @@
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/libs/images-loaded.min.js"></script>
     <script src="scripts/modules/header.js"></script>
-    <script src="scripts/modules/modal.js"></script>
+    <script src="scripts/modules/image-viewer.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
 
